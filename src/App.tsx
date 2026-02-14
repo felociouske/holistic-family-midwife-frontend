@@ -12,8 +12,8 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Booking from "./pages/Booking";
-import Blog from './pages/Blog';
-import BlogPost from './pages/BlogPost';
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 

@@ -4,8 +4,9 @@ import { Award, Heart, Users, Target, Globe, Sparkles, BookOpen, Shield, Trendin
 import EnquiryForm from "@/components/GeneralEnquiryForm";
 import heroImage from "/assets/hero-image.jpg";
 import consultationImage from "/assets/consultations.jpg";
-import prenatalImage from "/assets/prenatal-care.jpg";
-import postpartumImage from "/assets/postpartum.jpg";
+import empowermentImage from "/assets/empowerment.jpg";
+import girlSessionImage from "/assets/girls-session.jpg";
+import sessionImage from "/assets/session2.jpg";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -300,7 +301,7 @@ const About = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="relative group overflow-hidden rounded-2xl shadow-xl">
                 <img
-                  src={consultationImage}
+                  src={empowermentImage}
                   alt="Group education session"
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
@@ -311,7 +312,7 @@ const About = () => {
               
               <div className="relative group overflow-hidden rounded-2xl shadow-xl">
                 <img
-                  src={prenatalImage}
+                  src={sessionImage}
                   alt="One-on-one counseling"
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
@@ -322,7 +323,7 @@ const About = () => {
               
               <div className="relative group overflow-hidden rounded-2xl shadow-xl">
                 <img
-                  src={postpartumImage}
+                  src={girlSessionImage}
                   alt="School programs"
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />

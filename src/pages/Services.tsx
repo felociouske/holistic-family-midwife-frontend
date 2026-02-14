@@ -6,6 +6,12 @@ import { Heart, Baby, Users, Stethoscope, Calendar, BookOpen, UserCheck, CheckCi
 import prenatalImage from "/assets/prenatal-care.jpg";
 import postpartumImage from "/assets/postpartum.jpg";
 import consultationImage from "/assets/consultations.jpg";
+import sharedResponsibilityImage from "/assets/shared-responsibility.jpg";
+import preconceptionCareImage from "/assets/preconception-care.jpg";
+import labourImage from "/assets/labour.jpg";
+import empowermentImage from "/assets/empowerment.jpg";
+import girlSessionImage from "/assets/girls-session.jpg";
+import sessionImage from "/assets/session2.jpg";
 
 const Services = () => {
   const mainServices = [
@@ -46,7 +52,7 @@ const Services = () => {
     {
       icon: Users,
       title: "Partner Health: A Shared Responsibility",
-      image: consultationImage,
+      image: sharedResponsibilityImage,
       description: "Preconception planning for both partners",
       details: [
         "Comprehensive preconception health assessments for partners",
@@ -80,7 +86,7 @@ const Services = () => {
     {
       icon: Calendar,
       title: "Preconception Care",
-      image: prenatalImage,
+      image: preconceptionCareImage,
       description: "Preparing your body and mind for a healthy pregnancy",
       details: [
         "Comprehensive health history and physical examination",
@@ -97,7 +103,7 @@ const Services = () => {
     {
       icon: UserCheck,
       title: "Preparation for Labor & Delivery",
-      image: consultationImage,
+      image: labourImage,
       description: "Comprehensive childbirth education and preparation",
       details: [
         "Childbirth education classes (group or private)",
@@ -420,7 +426,7 @@ const Services = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
                 <img
-                  src={consultationImage}
+                  src={empowermentImage}
                   alt="Group education session"
                   className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
@@ -431,7 +437,7 @@ const Services = () => {
               
               <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
                 <img
-                  src={prenatalImage}
+                  src={sessionImage}
                   alt="One-on-one counseling"
                   className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
@@ -442,7 +448,7 @@ const Services = () => {
               
               <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
                 <img
-                  src={postpartumImage}
+                  src={girlSessionImage}
                   alt="School programs"
                   className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />

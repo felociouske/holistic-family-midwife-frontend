@@ -24,13 +24,13 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Services", path: "/services" },
+    { name: "Our Blog", path: "/blog" },
     { name: "Testimonials", path: "/#testimonials", hash: true },
     { name: "Contact Us", path: "/contact" },
   ];
 
   const isActive = (path: string, hash: boolean = false) => {
     if (hash) {
-      // For hash links, only mark active if on home page and hash matches
       return location.pathname === "/" && location.hash === path.split("#")[1];
     }
     return location.pathname === path;

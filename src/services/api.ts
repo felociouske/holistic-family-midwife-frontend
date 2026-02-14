@@ -105,7 +105,7 @@ export const api = {
         first_name: data.firstName,
         last_name: data.lastName,
         email: data.email,
-        phone: data.phone,
+        phone: data.phone.startsWith('0') ? data.phone.replace(/^0/, '+254') : data.phone,           
         address: data.address,
         service_type: data.serviceType,
         preferred_date: data.preferredDate,
