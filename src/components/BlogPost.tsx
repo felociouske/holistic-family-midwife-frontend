@@ -55,9 +55,9 @@ const BlogComponent = () => {
 
   const fetchBlogPosts = async () => {
     try {
-      setLoading(true);
+      setLoading(true);                                    
       const response = await api.searchBlogPosts({
-        page_size: 100 // Increased to fetch more posts
+        page_size: 100 
       });
       setPosts(response.results);
       setFilteredPosts(response.results);
