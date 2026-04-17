@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Crimson+Text:wght@400;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,24 +7,24 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222 47% 11%; /* Much darker - was 200 15% 25% */
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%; /* Much darker */
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%; /* Much darker */
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 327 73% 44%; /* Your magenta #C21890 */
+    --primary: 327 73% 44%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 330 86% 30%; /* Your deep purple #880E4F */
+    --secondary: 330 86% 30%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 35%; /* Much darker - was 200 10% 45% */
+    --muted-foreground: 215 16% 35%;
 
-    --accent: 327 92% 94%; /* Light magenta */
+    --accent: 327 92% 94%;
     --accent-foreground: 327 73% 44%;
 
     --destructive: 0 72% 51%;
@@ -41,17 +41,17 @@
     --soft-teal: 180 35% 45%;
     --sage-green: 140 30% 65%;
     --warm-coral: 15 85% 70%;
-    --deep-navy: 222 47% 11%; /* Darker */
+    --deep-navy: 222 47% 11%;
     --light-sage: 150 20% 95%;
-    
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, #C21890, #E7299F);
     --gradient-warm: linear-gradient(135deg, hsl(15 85% 70%), hsl(28 50% 85%));
-    
+
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px rgba(194, 24, 144, 0.15);
+    --shadow-soft:   0 4px 20px -4px rgba(194, 24, 144, 0.15);
     --shadow-medium: 0 8px 30px -6px rgba(194, 24, 144, 0.25);
-    
+
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -93,14 +93,15 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Jost', Inter, system-ui, sans-serif;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+    font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 700;
     color: hsl(222 47% 11%);
   }
@@ -115,17 +116,14 @@
     color: hsl(222 47% 11%);
   }
 
-  /* Make muted text darker */
   .text-muted-foreground {
     color: hsl(215 16% 35%) !important;
   }
 
-  /* Make primary text fully opaque */
   .text-primary {
     color: hsl(327 73% 44%) !important;
   }
 
-  /* Ensure all text is crisp */
   .text-foreground {
     color: hsl(222 47% 11%) !important;
   }
@@ -135,19 +133,19 @@
   .gradient-primary {
     background: linear-gradient(135deg, #C21890, #E7299F);
   }
-  
+
   .gradient-warm {
     background: var(--gradient-warm);
   }
-  
+
   .shadow-soft {
     box-shadow: 0 4px 20px -4px rgba(194, 24, 144, 0.15);
   }
-  
+
   .shadow-medium {
     box-shadow: 0 8px 30px -6px rgba(194, 24, 144, 0.25);
   }
-  
+
   .transition-smooth {
     transition: var(--transition-smooth);
   }

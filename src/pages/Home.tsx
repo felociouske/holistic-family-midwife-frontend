@@ -21,9 +21,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
       <HeroCarousel />
-
       {/* Impact Story Section */}
       <section className="py-20 bg-gradient-to-b from-white to-light-sage">
         <div className="container mx-auto px-4">
